@@ -1,11 +1,45 @@
 // problema 2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
-#include <iostream>
 
+//
+#include <string>
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    string cadena;
+    string matriz[2][2];
+    for (size_t f = 0; f < size(matriz); f++)
+    {
+        for (size_t c = 0; c < size(matriz); c++)
+        {
+            cout << "escribe una cadena de texto ";
+            getline(cin, cadena);
+            // cout << cadena << ", ";
+        }
+        cout << " \n";
+    }
+    //muestra en pantalla la matriz
+    for (size_t f = 0; f < size(matriz); f++)
+    {
+        for (size_t c = 0; c < size(matriz); c++)
+        {
+            cout << "escribe una cadena de texto ";
+            getline(cin, cadena);
+            // cout << cadena << ", ";
+        }
+        cout << " \n";
+    }
+}
+
+int buscarHola()
+{
+
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
