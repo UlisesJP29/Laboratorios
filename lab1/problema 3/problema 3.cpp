@@ -5,7 +5,7 @@
 
 int main()
 {
-    
+     
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
