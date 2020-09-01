@@ -2,10 +2,38 @@
 //
 
 #include <iostream>
+#include <time.h>
+using namespace std;
+void generarArreglo(int* matriz, int length) {
+    srand(time(NULL));
 
-int main()
-{
-     
+    while (length--)
+    {
+        *matriz = rand() % 99 + 1;
+        ++matriz;
+    }
+}
+
+void imprimirArreglo(int* matriz, int n) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; ++j, ++matriz) {
+            cout << *matriz << '\t';
+        }
+        cout << '\n';
+    }
+}
+
+int main() {
+
+    int n;
+    cin >> n;
+    int* matriz = new int[n * n];
+    generarArreglo(matriz, n * n);
+    imprimirArreglo(matriz, n);
+    delete[] matriz;
+
+    system("pause");
+    return 0;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
