@@ -1,5 +1,5 @@
 // problema 2.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//2.	Escriba un método que devuelva verdadero si una matriz de trings contiene la cadena "Hola"; falso de lo contrario.
 
 
 //
@@ -60,35 +60,7 @@ int main()
 
 }
 
-/*
-int buscarHoela()
-{
-    string cadena;
-    string matriz[2][2];
-    int sizes = size(matriz);
-    for (size_t f = 0; f < size(matriz); f++)
-    {
-        for (size_t c = 0; c < size(matriz); c++)
-        {
-            cout << "escribe una cadena de texto ";
-            getline(cin, cadena);
-            matriz[f][c] = cadena;
-            
-        }
-        cout << " \n";
-    }
-    for (size_t f = 0; f < tamano; f++)
-    {
-        for (size_t c = 0; c < tamano; c++)
-        {
-            if (matriz[f][c] == "Hola")
-            {
-                return true;
-            }
-          //  cout << matriz[f][c] << ", ";
-        }
-        cout << " \n";
-    }*/
+
 
 
 

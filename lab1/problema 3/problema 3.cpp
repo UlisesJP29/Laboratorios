@@ -1,39 +1,22 @@
 // problema 3.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//3.	Escriba un método que imprima todos los elementos de una matriz de caracteres en orden inverso.
 
+#include <string>
 #include <iostream>
+#include <conio.h>
+#include <cstdlib>
+#include <vector>
 #include <time.h>
+
 using namespace std;
-void generarArreglo(int* matriz, int length) {
-    srand(time(NULL));
-
-    while (length--)
-    {
-        *matriz = rand() % 99 + 1;
-        ++matriz;
-    }
-}
-
-void imprimirArreglo(int* matriz, int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; ++j, ++matriz) {
-            cout << *matriz << '\t';
-        }
-        cout << '\n';
-    }
-}
-
-int main() {
-
+int main()
+{
     int n;
     cin >> n;
-    int* matriz = new int[n * n];
-    generarArreglo(matriz, n * n);
-    imprimirArreglo(matriz, n);
-    delete[] matriz;
+    vector<string> matriz(n * n, " ");
+ 
 
-    system("pause");
-    return 0;
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

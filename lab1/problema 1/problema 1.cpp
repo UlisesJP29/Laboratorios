@@ -1,5 +1,5 @@
 // problema 1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+//1.	Escribe un método que devuelva el porcentaje de la cantidad de elementos que tienen el valor verdadero en una matriz de valores booleanos.
 #include <iostream>
 #include <conio.h>
 using namespace std;
